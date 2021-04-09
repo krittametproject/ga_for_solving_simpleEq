@@ -24,12 +24,12 @@ def gen_Algorithm(crsOver_rate, perMut_rate):
                 Best_Chromosome = copy.deepcopy(i_eva)
                 break
         if min(F_obj) != 0:
-            print("Round : {} Min : {} Chromosome : {}".format(Round_number, min(F_obj), Chromosome))
+            print("Round : {} Min : {} - Population : {}".format(Round_number, min(F_obj), Chromosome))
         else:
             print('\n')
             print("-"*40)
             temp_Round.append(Round_number)
-            print("Round : {} Min : {} - Chromosome : {}".format(Round_number, min(F_obj), Chromosome))
+            print("Round : {} Min : {} - Population : {}".format(Round_number, min(F_obj), Chromosome))
             print("Best Chromosome : ", Best_Chromosome)
             print("F_obj : ", min(F_obj))
             print("-"*40)
